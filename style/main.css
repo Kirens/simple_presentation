@@ -56,6 +56,8 @@ h1, h2 {
 
 
 ul {
+    display: table;
+
     list-style-type: none;
     position: relative;
     padding-top: 5em;
@@ -67,7 +69,8 @@ li {
 }
 a {
     text-decoration: none;
-    color: #000;
+    color: #212121;
+    outline: none;
 
     position: relative;
 }
@@ -85,8 +88,39 @@ a::before {
     bottom: 10%;
 }
 a:hover::before {
+    background-color: #A7FFEB;
+}
+a:focus::before {
     background-color: #64FFDA;
+}
+a:active {
+    color: #9E9E9E;
 }
 a span {
     position: relative;
+}
+
+
+
+@media all and (orientation: portrait) {
+    .content {
+        display: table;
+        width: auto;
+    }
+    .line {
+        width: auto;
+        height: 0.1em;
+        margin: 0 2em;
+
+        transform: rotate(0deg);
+    }
+    ul {
+        padding-top: 3em;
+    }
+}
+
+@media (max-width: 50em) and (orientation: landscape) {
+    .v-center {
+        border: none;
+    }
 }
