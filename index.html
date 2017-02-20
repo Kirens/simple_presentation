@@ -13,12 +13,21 @@
     <link rel="stylesheet" href="external/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="v-center">
+    <nav id="menu">
+        <a class="hamburger open" href="#menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <a class="hamburger close" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <ul id="nav">
+            <li><a href="#"><span>HOME</span></a></li>
+            <li><a href="#CV"><span>CV</span></a></li>
+            <li><a href="#about"><span>ABOUT ME</span></a></li>
+        </ul>
+    </nav>
+    <main class="v-center">
         <div class="content">
-            <main>
+            <div class="splash">
                 <h1>Hello, I'm Erik</h1>
                 <h2>and I like to code</h2>
-            </main>
+            </div>
             <div class="line"></div>
             <ul>
                 <li><a href="https://github.com/kirens"><span><i class="fa fa-github" aria-hidden="true"></i> github.com/kirens</span></a></li>
@@ -26,6 +35,20 @@
                 <li><a href="mailto:hello@erik.work"><span><i class="fa fa-at" aria-hidden="true"></i> hello@erik.work</span></a></li>
             </ul>
         </div>
-    </div>
+    </main>
+    <section id="CV">
+        <div class="v-center">
+            <div class="content">
+                Test
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="v-center">
+            <div class="content">
+                Test2
+            </div>
+        </div>
+    </section>
 </body>
 </html>

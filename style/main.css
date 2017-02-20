@@ -1,4 +1,4 @@
-body {
+body, section {
     display: table;
     position: absolute;
 
@@ -8,8 +8,8 @@ body {
     margin: 0;
     left: 0;
     top: 0;
-
-
+}
+body {
     font-family: 'Poppins', sans-serif;
     color: #212121;
     background-color: #FAFAFA;
@@ -20,7 +20,8 @@ body {
 
     padding: 0;
     margin: 0;
-
+}
+main.v-center {
     border: 3em solid #E0F2F1;
 }
 .content {
@@ -30,11 +31,63 @@ body {
     padding: 10px;
     display: flex;
 }
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+#menu {
+    position: absolute;
+    margin: 5em 0 0 5em;
+    z-index: 100;
+}
+.hamburger {
+    color: #212121;
+    text-decoration: none;
+    position: absolute;
+    padding: 1em;
+}
+.hamburger.close, #menu:target .hamburger.open {
+    display: none;
+}
+#menu:target .hamburger.close, .hamburger.open {
+    display: inherit;
+}
+#nav {
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 0.2s ease-in, transform 0.2s linear, visibility 0s linear 0.4s;
+}
+#nav {
+    padding: 0;
+    transform: scale(0.35);
+    transform-origin: 1em 1em;
+}
+#menu:target #nav {
+    visibility: visible;
+    opacity: 1;
+
+    transform: scale(1);
+    transition: opacity 0.2s ease-out, transform 0.2s linear, visibility 0s linear 0s;
+}
+#nav li a {
+    display: block;
+    padding: 0.2em 1.4em;
+    background-color: #F5F5F5;
+}
+#nav li a:hover {
+    background-color: #E0E0E0;
+}
+#nav li:first-of-type a {
+    padding-top: 1em;
+}
+#nav li:last-of-type a {
+    padding-bottom: 1em;
+}
 
 
-
-
-main {
+.splash {
     margin-right: 3em;
     text-align: center;
     margin: auto;
@@ -67,17 +120,15 @@ ul {
 li {
     position: relative;
 }
-a {
-    text-decoration: none;
-    color: #212121;
+.content a {
     outline: none;
 
     position: relative;
 }
-a:visited {
+.content a:visited {
     color: #616161;
 }
-a::before {
+.content a::before {
     content: " ";
     width: calc(100% + 0.6em);
     margin-left: -0.3em;
@@ -87,20 +138,36 @@ a::before {
     height: 30%;
     bottom: 10%;
 }
-a:hover::before {
+.content a:hover::before {
     background-color: #A7FFEB;
 }
-a:focus::before {
+.content a:focus::before {
     background-color: #64FFDA;
 }
-a:active {
+.content a:active {
     color: #9E9E9E;
 }
-a span {
+.content a span {
     position: relative;
 }
 
 
+section .content {
+    background: #fafafa;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+
+    transform: translateY(1em);
+    transition: opacity 0.2s ease-in, transform 0.2s linear, visibility 0s linear 0.4s;
+}
+#CV:target .content, #about:target .content {
+    visibility: visible;
+    opacity: 1;
+
+    transform: translateY(0);
+    transition: opacity 0.2s ease-out, transform 0.2s linear, visibility 0s linear 0s;
+}
 
 @media all and (orientation: portrait) {
     .content {
@@ -120,7 +187,11 @@ a span {
 }
 
 @media (max-width: 50em) and (orientation: landscape) {
-    .v-center {
+    main.v-center {
         border: none;
+    }
+    #menu {
+        position: absolute;
+        margin: 1em 0 0 1em;
     }
 }
