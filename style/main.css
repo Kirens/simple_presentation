@@ -1,3 +1,5 @@
+/* Hide unfinished for time being */
+#menu, #CV, #about { display: none !important }
 body, section {
     display: table;
     position: absolute;
@@ -150,7 +152,10 @@ li {
 .content a span {
     position: relative;
 }
-
+.content .fa {
+    width: 1em;
+    text-align: right;
+}
 
 section .content {
     background: #fafafa;
