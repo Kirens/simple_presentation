@@ -29,13 +29,14 @@ I mean, preferably add your own data and don't impersonate me.
             <li><a href="#about"><span>ABOUT ME</span></a></li>
         </ul>
     </nav>
+    <div id="main-fixed">
     <main class="v-center">
         <div class="content">
             <div class="splash">
                 <h1>Hello, I'm Erik</h1>
                 <h2>and I like to code</h2>
             </div>
-            <div class="line"></div>
+            <hr class="line">
             <ul>
                 <li><a href="https://github.com/kirens"><span><i class="fa fa-github" aria-hidden="true"></i> github.com/kirens</span></a></li>
                 <li><a href="https://linkedin.com/in/erik-nygren"><span><i class="fa fa-linkedin" aria-hidden="true"></i> linkedin.com/in/erik-nygren</span></a></li>
@@ -43,6 +44,7 @@ I mean, preferably add your own data and don't impersonate me.
             </ul>
         </div>
     </main>
+    </div>
     <section id="about">
         <div class="v-center">
             <div class="content">
@@ -60,53 +62,78 @@ I mean, preferably add your own data and don't impersonate me.
     </section>
     <section id="CV">
         <div class="content">
+            <a href="public-resume.pdf">Download as PDF</a>
             <h1 class="name">Erik Nygren</h1>
             <ul id="cv-sections">
-                <li class="sec">
+                <li id="personal-info" class="sec">
                     <h2>Personal Data</h2>
-                    <ul class="entries">
+                    <ul>
                         <li>
-                            <h3></h3>
-                            <h3 class="side">Date of Birth</h3>
-                            <p>1997-09-03</p>
-                        </li>
-                        <li>
-                            <h3></h3>
-                            <h3 class="side">Email</h3>
+                            <h3 class="side">Mail:</h3>
                             <p><a href="mailto:Erik Nygren <hello@erik.work>">hello@erik.work</a></p>
                         </li>
                         <li>
-                            <h3></h3>
-                            <h3 class="side">Github</h3>
+                            <h3 class="side">www:</h3>
+                            <p><a href="https://erik.work>">erik.work</a></p>
+                        </li>
+                        <li>
+                            <h3 class="side">Github:</h3>
                             <p><a href="https://github.com/Kirens">Kirens</a></p>
+                        </li>
+                        <li>
+                            <h3 class="side">LinkedIn:</h3>
+                            <p><a href="https://linkedin.com/in/erik-nygren">Erik Nygren</a></p>
                         </li>
                     </ul>
                 </li>
                 <li class="sec side-line">
-                    <h2>Work Experience</h2>
+                    <h2>Education</h2>
                     <ul class="entries">
                         <li>
                             <h3>
-                                Title of job and place
-                                <br>
-                                <i>Work description</i>
+                                Computer Science and Engineering,
+                                <em>Chalmers University of Technology</em>
                             </h3>
-                            <h3 class="side">
+                            <i>B.Sc. Computer Sience</i>
+                            <div class="duration">
+                                <em>Ongoing</em>
+                                <br>
                                 Aug 2016
-                                <br>
-                                <i>Current</i>
+                                <hr>
+                            </div>
+                            <p>
+                                Programme covering a broad range of topics in computer science and IT, courses ranging from hardware to programming at low and high levels as well as networking, algorithms, concurrency and relevant mathematics.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                Medvetet självledarskap,
+                                <em>World Values Initiative</em>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="duration">
+                                Apr 2017
+                                <br>
+                                Jan 2017
+                                <hr>
+                            </div>
+                            <p>
+                                A course that gave us insights and tools to better manage stress and conscious decision making through five full days spread over four months, study groups and individual coaching.
+                            </p>
                         </li>
                         <li>
-                            <h3>Job and location</h3>
-                            <h3 class="side">Jul 2014-Dec 2014</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </li>
-                        <li>
-                            <h3>Something at Somewhere</h3>
-                            <h3 class="side">Summer 2013</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <h3>
+                                Natural Science Programme,
+                                <em>Blackebergs gymnasium</em>
+                            </h3>
+                            <div class="duration">
+                                Jun 2016
+                                <br>
+                                Aug 2013
+                                <hr>
+                            </div>
+                            <p>
+                                Graduated with a diploma project on probabilistic classifiers applied to mail-sorting, described in detail further down.
+                            </p>
                         </li>
                     </ul>
                 </li>
@@ -115,33 +142,266 @@ I mean, preferably add your own data and don't impersonate me.
                     <ul class="entries">
                         <li>
                             <h3>
-                                Chalmers University of Technology
-                                <br>
-                                <i>B.Sc. Computer Sience</i>
+                                R&D summer intern at
+                                <a href="https://www.ericsson.com/"><em>Ericsson</em></a>
                             </h3>
-                            <h3 class="side">
-                                Aug 2016
+                            <div class="duration">
+                                <em>Ongoing</em>
                                 <br>
-                                <i>Current</i>
-                            </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                Jun 2018
+                                <hr>
+                            </div>
+                            <p>
+                                I’m stationed at a department for internal education where I bring my programing knowledge to help migrate the courses to a newer learning platform.
+                            </p>
                         </li>
                         <li>
-                            <h3>Medvetet självledarskap</h3>
-                            <h3 class="side">Dec 2016</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h3>
+                                Consultant at
+                                <a href="https://ctk.se/"><em>Chalmers Teknologkonsulter</em></a>
+                            </h3>
+                            <i>IT Consultant / Full Stack Developer</i>
+                            <div class="duration">
+                                <em>Ongoing</em>
+                                <br>
+                                Sep 2017
+                                <hr>
+                            </div>
+                            <p>
+                                Sweden’s largest student run consultancy firm where I get to use the skills I acquire from my studies. The consultants are part of the whole process from sales to development to project delivery, giving much freedom and responsibility with a lot of space for personal growth.
+                            </p>
                         </li>
                         <li>
-                            <h3>Blackebergs Gymnasium</h3>
-
-    <section id="about">
-        <div class="v-center">
-            <div class="content">
-                Not Yet Available
-            </div>
-        </div>
-    </section>    <h3 class="side">2013-2016</h3>
+                            <h3>
+                                Supervisor with
+                                <a href="https://ungaprogrammerare.se/"<em>Unga Programmerare</em></a>
+                            </h3>
+                            <div class="duration">
+                                Nov 2017
+                                <hr>
+                            </div>
+                            <p>
+                                A day camp over four days with about 20 kids in lower secondary education with varying levels of prior knowledge. Ended in them coding a version of flappy birds in python. It was held for the first time letting the founder, another supervisor and me experiment with the effectiveness of different methods of teaching.
+                            </p>
                         </li>
+                        <li>
+                            <h3>
+                                Assistant at the institution for data- and informationtechnology,
+                                <a href="https://www.chalmers.se/en"<em>Chalmers</em></a>
+                            </h3>
+                            <i>Course Assistant</i>
+                            <div class="duration">
+                                Oct 2017
+                                <br>
+                                Aug 2017
+                                <hr>
+                            </div>
+                            <p>
+                                Introduction to Programming (Python), Introduction to Functional Programming (Haskell); two introductory programming courses where I got to share my passion for programing in guiding new students towards a deeper understanding of the languages and the process of coding and debugging.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sec">
+                    <h2>Instructive Projects</h2>
+                    <p>
+                        Programming is a wonderfull tool to settle curiosity and I'm never far from an editor to allow som quick scripted solutions. But sometimes I take on larger tasks, here is a selection I think are worth mentioning.
+                    </p>
+                    <ul class="entries">
+                        <li>
+                            <h3>
+                                <a href="res/Erik-Nygren-High-School-Diploma-Paper.pdf">
+                                    Upper secondary diploma project, mail sorting
+                                </a>
+                            </h3>
+                            <div class="duration">
+                                May 2016
+                                <br>
+                                Sep 2015
+                                <hr>
+                            </div>
+                            <p>
+                                A project with more theoretical background and less focus on implementation. I explored how the sorting of email differed in two models of the Naive Bayes Classifier (NBC). One being Bernoulli NBC that is used in traditional spam filters and the other Multinomial NBC that is used classifying documents. The project investigated how different weighing of properties of the email affected the quality of the sorting.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                The Student Union’s membership database
+                            </h3>
+                            <i>Relational DBs</i>
+                            <div class="duration">
+                                Nov 2015
+                                <br>
+                                Aug 2015
+                                <hr>
+                            </div>
+                            <p>
+                                As PR manager on the union board I undertook constructing a membership database to ease the application process for and interaction with our members. In wanting to verify mail addresses I got to explore how to set up relations to efficiently store data. I also got to know some best practices in security and interaction with databases.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                Schedulegenerator,
+                                <a href="https://github.com/akaProxy/NOVAXML.JS.old">NOVAXML.JS</a>
+                            </h3>
+                            <i>JavaScript, Object oriented design and Version control</i>
+                            <div class="duration">
+                                May 2015
+                                <br>
+                                Mar 2014
+                                <hr>
+                            </div>
+                            <p>
+                                A tool for scraping the PDF schedules provided by the school and generation ICS-files for other calendar software. It became big programming project that went through 7 major versions where I learnt a lot about the importance of software design. It was a collaboration between a friend and I from which I gained experience of version control (specifically git). We mainly wrote in JavaScript which let me develop a deep understanding of the language.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                Informative website for <a href="">Project-H2O</a>
+                            </h3>
+                            <i>Webserver- and Web-technology as well as SEO</i>
+                            <div class="duration">
+                                Sep 2015
+                                <br>
+                                Dec 2012
+                                <hr>
+                            </div>
+                            <p>
+                                A long-lasting project centered around a friend’s interest in architecture, mine in technology and both of our interest in the future of the local area. Through many iterations of our website I taught myself web technology (HTML, CSS, JavaScript), webservers (mainly Apache + PHP), as well as common SEO metadata.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sec">
+                    <h2>Voluntary Work</h2>
+                    <p>
+                        I've been part of plenty of groups and generaly try to be helpfull to my community, here is a selection of the commitments I find have given personal growth.
+                    </p>
+                    <ul class="entries">
+                        <li>
+                            <h3>
+                                Elected representative in the
+                                <a href="https://chalmersstudentkar.se/union-council/">
+                                    <em>Chalmers Student Union Council</em>
+                                </a>
+                            </h3>
+                            <div class="duration">
+                                <em>Ongoning</em>
+                                <br>
+                                May 2017
+                                <hr>
+                            </div>
+                            <p>
+                                The Union’s highest decision-making body, centered around operational strategy. During my year I’ve mainly focused on outreach, bridging the gap between students and the council, and together with my electoral coalition on internationalization efforts of the council.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                Secretary of the board at
+                                <a href="https://dtek.se"><em>Datateknologsektionen Chalmers</em></a>
+                            </h3>
+                            <div class="duration">
+                                <em>Ongoning</em>
+                                <br>
+                                May 2018
+                                <hr>
+                            </div>
+                            <p>
+                                I want to focus on the strategic work of advancing the organization, especially in regards to creating networking oportunities and knowledge exchange between all student union divisions of computer science in Sweden. As secretary I also created a robust LaTeX class for protocolls.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                Mikrodatordriftsystemman at
+                                <a href="https://dhack.se/"><em>dHack</em></a>
+                            </h3>
+                            <i>Sysadmin, GDPR</i>
+                            <div class="duration">
+                                May 2018
+                                <br>
+                                May 2017
+                                <hr>
+                            </div>
+                            <p>
+                                dHack is responsible for the administration of the internal systems, mainly web and mail servers, at the Division for Computer Science and Engineering at Chalmers. In this role I was a member of the working group to ensure the organization was GDPR compliant.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                Member of <em>Chalmers Student Union’s Nomination Committee</em>
+                            </h3>
+                            <div class="duration">
+                                May 2017
+                                <br>
+                                Dec 2016
+                                <hr>
+                            </div>
+                            <p>
+                                The committee supports the council and board in elections to positions of trust. From the role I got to experience working on project basis and was told many life lessons from knowledgeable people I got to interview.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                Board member of <em>Blackebergs Student Union</em>
+                            </h3>
+                            <div class="duration">
+                                Apr 2016
+                                <br>
+                                Apr 2015
+                                <hr>
+                            </div>
+                            <p>
+                                Under mitt år jobbade jag med skapande av grafik till kommunikation och fick erfarenheter av att vara i kontakt med externa aktörer för exempelvis tryckerier. Jag försökte även utveckla en kommunikationspolicy, och satte upp en medlemsdatabas.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                Member of <em>akaProxy</em>
+                            </h3>
+                            <div class="duration">
+                                Sep 2015
+                                <br>
+                                Nov 2013
+                                <hr>
+                            </div>
+                            <p>
+                                A programming association organized under distributed leadership as a study forum for knowledge sharing and cooperative projects. My main contribution was a two-hour course where a friend and I taught basic programming and web technologies to new members.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li id="tech-skills" class="sec">
+                    <h2>Some Technical Skills</h2>
+                    <p>
+                        I’m a proficient computer user and appreciate challenges. I’ve experienced reoccurring concepts and feel I can adopt new technologies with relative ease. But to get a sense of what I already know this is a selection of some languages and technologies I’ve used, and feel is worth mentioning.
+                    </p>
+                    <ul>
+                        <li>
+                            Good knowledge:
+                            <ul class="skills">
+                                <li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>Excel</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Managing:
+                            <ul class="skills">
+                                <li>Java</li><li>Haskell</li><li>git</li><li><span class="LaTeX">L<sup>a</sup>T<sub>e</sub>X</span></li><li>React</li><li>Python</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Familiar with:
+                            <ul class="skills">
+                                <li>php</li><li>MySQL</li><li>Bash</li><li>C</li><li>Batch</li><li>Erlang</li><li>Matlab</li><li>*nix</li><li>Windows</li><li>Prolog</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="lang-skills" class="sec">
+                    <h2>Language Skills</h2>
+                    <ul>
+                        <li>Swedish: Native</li>
+                        <li>English: Fluent</li>
+                        <li>Spanish: Basic</li>
                     </ul>
                 </li>
             </ul>
