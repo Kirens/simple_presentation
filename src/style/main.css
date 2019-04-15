@@ -1,3 +1,5 @@
+/* Hide unfinished for time being */
+#menu, #CV, #about { display: none !important }
 body, section {
     display: table;
     position: absolute;
