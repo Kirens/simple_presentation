@@ -36,31 +36,22 @@ a {
     color: #212121;
 }
 
-.nav-box {
-    height: initial;
-}
 #menu {
     position: absolute;
     margin: 5em 0 0 5em;
     z-index: 100;
-}
-#menu .cover {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    cursor: default;
-}
-#menu:target .cover {
-    display: block;
 }
 .hamburger {
     color: #212121;
     text-decoration: none;
     position: absolute;
     padding: 1em;
+}
+.hamburger.close, #menu:target .hamburger.open {
+    display: none;
+}
+#menu:target .hamburger.close, .hamburger.open {
+    display: inherit;
 }
 #nav {
     visibility: hidden;
@@ -118,13 +109,12 @@ h1, h2 {
 
 
 ul {
+    display: table;
+
     list-style-type: none;
     position: relative;
-    padding-left: 0;
-}
-main ul {
     padding-top: 5em;
-    display: table;
+    padding-left: 0;
     margin: auto;
 }
 li {
